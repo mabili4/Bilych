@@ -3,43 +3,69 @@
 <head>
     <title>Чого бажає жінка - Салон краси</title>
     <link rel="stylesheet" type="text/css" href="Final.css">
+    <script src="Final.js"></script>
 </head>
 <body>
     <header>
         <h1>Чого бажає жінка</h1>
     </header>
-    
+
     <nav>
         <ul>
+            <div id="confirmationMessage"></div>
+             
             <li><a href="#">Головна</a></li>
             <li><a href="#">Послуги</a></li>
-            <li><a href="#">Запис</a></li>
-            <li><a href="#">Контакти</a></li>
+            
+            <button id="showFormButton" onclick="toggleAppointmentForm()">Записатися</button>
+    
+            <form id="appointmentForm" style="display: none;">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" required>
+        
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+        
+                <label for="procedure">Процедура:</label>
+                <select id="procedure" required>
+                    <option value="">Оберіть процедуру</option>
+                    <option value="Манікюр">Манікюр</option>
+                    <option value="Педикюр">Педикюр</option>
+                    <option value="Стрижка">Стрижка</option>
+                    <option value="Масаж">Масаж</option>
+                    <option value="Медитація">Медитація</option>
+                    <option value="Йога">Йога</option>
+                </select>
+        
+                <label for="date">Дата:</label>
+                <input type="date" id="date" required>
+        
+                <label for="time">Час:</label>
+                <input type="time" id="time" required>
+        
+                <input type="submit" value="Записатися">
+            </form>
+
+                         
+            <button id="contactButton" onclick="toggleContactInfo()">Контакти</button>
+            <div id="contactInfo" style="display: none;">
+                <h2>Контактна інформація</h2>
+                <p>Телефон: +380111111111</p>
+                <p>Email: chudo@gmail.com</p>
+                <p>Адреса: вул. Казкова, м. Чарівне</p>
+            
+            </div>
+            
         </ul>
     </nav>
-    
-    <section>
-        <h2>Про нас</h2>
-        <p>Чого бажає жінка - це салон краси, який потурбується про вашу зовнішність та душевний комфорт.</p>
-    </section>
-    
-    <section>
-        <h2>Наші послуги</h2>
-        <ul>
-            <li>Манікюр</li>
-            <li>Педикюр</li>
-            <li>Стрижка</li>
-            <li>Фарбування волосся</li>
-            <li>Массаж</li>
-            <li>Медитація</li>
-            <li>Йога</li>
-        </ul>
-    </section>
+    <div class="image-container">
+        <img src="https://wezom.com.ua/Media/files/filemanager/1blog/metody-privlecheniya-klientov-v-salon-krasoty-1.png" alt="Салон красоти">
+    </div>
     
     <footer>
-        <p>Чого бажає жінка - Салон краси</p>
+        <p>© 2023 Чого бажає жінка - Салон краси</p>
     </footer>
+        
     
-    <script src="script.js"></script>
 </body>
 </html>
