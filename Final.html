@@ -18,19 +18,32 @@
             <li><button class="navButton" onclick="toggleAppointmentForm()">Записатися</button></li>
         </ul>
     </nav>
+
     <div id="homeInfo" class="info">
         <h2>Про нас</h2>
-                
+                <p>Чого бажає жінка - це салон краси, який пропонує широкий спектр послуг для вашої краси та добробуту. Наша команда досвідчених фахівців допоможе вам виглядати і почуватися найкращим чином.</p>
+                <p>Відвідавши салон краси, ви не тільки перетворитеся зовні, але і відпочинете емоційно, відвернетеся від побутової суєти і отримаєте море задоволення від приємної атмосфери салону.</p>
+                <p>Бути собою. Бути гарною.</p>
     </div>
-            
+
     <div id="servicesInfo" class="info">
         <h2>Послуги</h2>
-       
+        <select id="procedure" required>
+            <option value="">Оберіть процедуру</option>
+            <option value="Манікюр">Манікюр</option>
+            <option value="Педикюр">Педикюр</option>
+            <option value="Стрижка">Стрижка</option>
+            <option value="Масаж">Масаж</option>
+            <option value="Медитація">Медитація</option>
+            <option value="Йога">Йога</option>
+        </select> 
     </div>
 
     <div id="contactInfo" class="info">
         <h2>Контактна інформація</h2>
-                
+                <p>Телефон: +380111111111</p>
+                <p>Email: chudo@gmail.com</p>
+                <p>Адреса: вул. Казкова, м. Чарівне</p> <!-- Інформація для сторінки "Контакти" -->
     </div>
 
     <form id="appointmentForm" class="info" style="display: none;">
