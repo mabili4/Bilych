@@ -11,65 +11,61 @@
     </header>
 
     <nav>
-        <ul>
-            <div id="confirmationMessage"></div>
-             
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Послуги</a></li>
+        <ul class="button-container">
+            <li><button class="navButton" onclick="toggleHomeInfo()">Головна</button></li>
+            <li><button class="navButton" onclick="toggleServicesInfo()">Послуги</button></li>
+            <li><button class="navButton" onclick="showContactInfo()">Контакти</button></li>
+            <li><button class="navButton" onclick="toggleAppointmentForm()">Записатися</button></li>
+        </ul>
+    </nav>
+    <div id="homeInfo" class="info">
+        <h2>Про нас</h2>
+                
+    </div>
             
-            <button id="showFormButton" onclick="toggleAppointmentForm()">Записатися</button>
+    <div id="servicesInfo" class="info">
+        <h2>Послуги</h2>
+       
+    </div>
 
-            <form id="appointmentForm" style="display: none;">
-                <ul>
-                    <li>
-                        <label for="name">Ім'я:</label>
-                        <input type="text" id="name" required>
-                    </li>
-                    <li>
-                        <label for="phone">Телефон:</label>
-                        <input type="tel" id="phone" required>
-                    </li>
-                    <li>
-                        <label for="procedure">Процедура:</label>
-                        <select id="procedure" required>
-                            <option value="">Оберіть процедуру</option>
-                            <option value="Манікюр">Манікюр</option>
-                            <option value="Педикюр">Педикюр</option>
-                            <option value="Стрижка">Стрижка</option>
-                            <option value="Масаж">Масаж</option>
-                            <option value="Медитація">Медитація</option>
-                            <option value="Йога">Йога</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="date">Дата:</label>
-                        <input type="date" id="date" required>
-                    </li>
-                    <li>
-                        <label for="time">Час:</label>
-                        <input type="time" id="time" required>
-                    </li>
-                    <li>
-                        <label for="message">Додаткові побажання:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
-                    </li>
-                    <li>
-                        <label for="terms">Я погоджуюся з умовами:</label>
-                        <input type="checkbox" id="terms" name="terms" required><br>
-                    </li>
-                </ul>
+    <div id="contactInfo" class="info">
+        <h2>Контактна інформація</h2>
+                
+    </div>
 
-                <input type="submit" value="Записатися">
-            </form>
-                         
-            <button id="contactButton" onclick="toggleContactInfo()">Контакти</button>
-            <div id="contactInfo" style="display: none;">
-                <h2>Контактна інформація</h2>
-                <p>Телефон: +380111111111</p>
-                <p>Email: chudo@gmail.com</p>
-                <p>Адреса: вул. Казкова, м. Чарівне</p>
+    <form id="appointmentForm" class="info" style="display: none;">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="procedure">Процедура:</label>
+        <select id="procedure" required>
+            <option value="">Оберіть процедуру</option>
+            <option value="Манікюр">Манікюр</option>
+            <option value="Педикюр">Педикюр</option>
+            <option value="Стрижка">Стрижка</option>
+            <option value="Масаж">Масаж</option>
+            <option value="Медитація">Медитація</option>
+            <option value="Йога">Йога</option>
+        </select>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Час:</label>
+        <input type="time" id="time" required>
+
+        <label for="message">Додаткові побажання:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
+
+        <label for="terms">Я погоджуюся з умовами:</label>
+        <input type="checkbox" id="terms" name="terms" required><br>
+
+        <input type="submit" value="Записатися">
+    </form>
             
-            </div>
             
         </ul>
     </nav>

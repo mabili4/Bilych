@@ -1,25 +1,56 @@
-function toggleAppointmentForm() {
-    var form = document.getElementById("appointmentForm");
-    var button = document.getElementById("showFormButton");
+function toggleHomeInfo() {
+    var homeInfo = document.getElementById("homeInfo");
+    homeInfo.style.display = (homeInfo.style.display === "none") ? "block" : "none";
     
-    if (form.style.display === "none") {
-        form.style.display = "block";
-        button.textContent = "Закрити";
-    } else {
-        form.style.display = "none";
-        button.textContent = "Записатися";
-    }
-}
-
-function toggleContactInfo() {
+    var servicesInfo = document.getElementById("servicesInfo");
+    servicesInfo.style.display = "none";
+    
     var contactInfo = document.getElementById("contactInfo");
-    var button = document.getElementById("contactButton");
+    contactInfo.style.display = "none";
     
-    if (contactInfo.style.display === "none") {
-        contactInfo.style.display = "block";
-        button.textContent = "Закрити";
-    } else {
-        contactInfo.style.display = "none";
-        button.textContent = "Контакти";
-    }
-}
+    var appointmentForm = document.getElementById("appointmentForm");
+    appointmentForm.style.display = "none";
+  }
+  
+  function toggleServicesInfo() {
+    var servicesInfo = document.getElementById("servicesInfo");
+    servicesInfo.style.display = (servicesInfo.style.display === "none") ? "block" : "none";
+    
+    var homeInfo = document.getElementById("homeInfo");
+    homeInfo.style.display = "none";
+    
+    var contactInfo = document.getElementById("contactInfo");
+    contactInfo.style.display = "none";
+    
+    var appointmentForm = document.getElementById("appointmentForm");
+    appointmentForm.style.display = "none";
+  }
+  
+  function toggleAppointmentForm() {
+    var appointmentForm = document.getElementById("appointmentForm");
+    appointmentForm.style.display = (appointmentForm.style.display === "none") ? "block" : "none";
+    
+    var homeInfo = document.getElementById("homeInfo");
+    homeInfo.style.display = "none";
+    
+    var servicesInfo = document.getElementById("servicesInfo");
+    servicesInfo.style.display = "none";
+    
+    var contactInfo = document.getElementById("contactInfo");
+    contactInfo.style.display = "none";
+  }
+
+  function showContactInfo() {
+    var contactInfo = document.getElementById("contactInfo");
+    contactInfo.style.display = (contactInfo.style.display === "none") ? "block" : "none";
+    
+    var homeInfo = document.getElementById("homeInfo");
+    homeInfo.style.display = "none";
+    
+    var servicesInfo = document.getElementById("servicesInfo");
+    servicesInfo.style.display = "none";
+    
+    var appointmentForm = document.getElementById("appointmentForm");
+    appointmentForm.style.display = "none";
+  }
+  
