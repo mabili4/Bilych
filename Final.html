@@ -18,34 +18,49 @@
             <li><a href="#">Послуги</a></li>
             
             <button id="showFormButton" onclick="toggleAppointmentForm()">Записатися</button>
-    
+
             <form id="appointmentForm" style="display: none;">
-                <label for="name">Ім'я:</label>
-                <input type="text" id="name" required>
-        
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" required>
-        
-                <label for="procedure">Процедура:</label>
-                <select id="procedure" required>
-                    <option value="">Оберіть процедуру</option>
-                    <option value="Манікюр">Манікюр</option>
-                    <option value="Педикюр">Педикюр</option>
-                    <option value="Стрижка">Стрижка</option>
-                    <option value="Масаж">Масаж</option>
-                    <option value="Медитація">Медитація</option>
-                    <option value="Йога">Йога</option>
-                </select>
-        
-                <label for="date">Дата:</label>
-                <input type="date" id="date" required>
-        
-                <label for="time">Час:</label>
-                <input type="time" id="time" required>
-        
+                <ul>
+                    <li>
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" required>
+                    </li>
+                    <li>
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" required>
+                    </li>
+                    <li>
+                        <label for="procedure">Процедура:</label>
+                        <select id="procedure" required>
+                            <option value="">Оберіть процедуру</option>
+                            <option value="Манікюр">Манікюр</option>
+                            <option value="Педикюр">Педикюр</option>
+                            <option value="Стрижка">Стрижка</option>
+                            <option value="Масаж">Масаж</option>
+                            <option value="Медитація">Медитація</option>
+                            <option value="Йога">Йога</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="date">Дата:</label>
+                        <input type="date" id="date" required>
+                    </li>
+                    <li>
+                        <label for="time">Час:</label>
+                        <input type="time" id="time" required>
+                    </li>
+                    <li>
+                        <label for="message">Додаткові побажання:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
+                    </li>
+                    <li>
+                        <label for="terms">Я погоджуюся з умовами:</label>
+                        <input type="checkbox" id="terms" name="terms" required><br>
+                    </li>
+                </ul>
+
                 <input type="submit" value="Записатися">
             </form>
-
                          
             <button id="contactButton" onclick="toggleContactInfo()">Контакти</button>
             <div id="contactInfo" style="display: none;">

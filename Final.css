@@ -1,13 +1,16 @@
 body {
-    background-color: #EDB6BB; 
-    font-family: Arial, sans-serif;
+    background-color: #FADADD; 
+    font-family: 'Playfair Display', serif;
+    color: #776368;
+    font-style: italic;
+    letter-spacing: 4.4px;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #C0A8C3; 
-    padding: 20px;
+    background-color: #EFDECD; 
+    padding: 40px;
     text-align: center;
 }
 
@@ -23,6 +26,23 @@ header {
 #showFormButton:hover, #contactButton:hover {
     background-color: #3F5865;
 }
+
+#appointmentForm {
+    display: none;
+  }
+  
+  #appointmentForm ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #appointmentForm li {
+    margin-bottom: 10px;
+  }
+  
+  #appointmentForm label {
+    display: block;
+  }
 
 #contactInfo {
     display: none;
