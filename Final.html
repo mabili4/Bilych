@@ -12,10 +12,10 @@
 
     <nav>
         <ul class="button-container">
-            <li><button class="navButton" onclick="toggleHomeInfo()">Головна</button></li>
-            <li><button class="navButton" onclick="toggleServicesInfo()">Послуги</button></li>
-            <li><button class="navButton" onclick="showContactInfo()">Контакти</button></li>
-            <li><button class="navButton" onclick="toggleAppointmentForm()">Записатися</button></li>
+            <li><button id="homeinfobtn" class="navButton" onclick="toggleHomeInfo(this)">Головна</button></li>
+            <li><button id="serviceinfobtn" class="navButton" onclick="toggleServicesInfo(this)">Послуги</button></li>
+            <li><button id="contactinfobtn" class="navButton" onclick="showContactInfo(this)">Контакти</button></li>
+            <li><button id="appintmentform" class="navButton" onclick="toggleAppointmentForm(this)">Записатися</button></li>
         </ul>
     </nav>
 
@@ -43,7 +43,7 @@
         <h2>Контактна інформація</h2>
                 <p>Телефон: +380111111111</p>
                 <p>Email: chudo@gmail.com</p>
-                <p>Адреса: вул. Казкова, м. Чарівне</p> <!-- Інформація для сторінки "Контакти" -->
+                <p>Адреса: вул. Казкова, м. Чарівне</p> 
     </div>
 
     <form id="appointmentForm" class="info" style="display: none;">

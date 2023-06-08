@@ -1,11 +1,12 @@
 body {
-    background-color: #FADADD; 
-    font-family: 'Playfair Display', serif;
-    color: #776368;
-    font-style: italic;
-    letter-spacing: 4.4px;
-    margin: 0;
-    padding: 0;
+  background-color: #FADADD;
+  font-family: 'Playfair Display', serif;
+  color: #776368;
+  font-style: italic;
+  letter-spacing: 4.4px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 header {
