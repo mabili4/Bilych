@@ -45,6 +45,17 @@ header {
   display: none;
 }
 
+#servicesInfo select {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
+  color: #776368;
+}
+
+#servicesInfo select option {
+  font-family: 'Playfair Display', serif;
+  color: #776368;
+}
+
 #appointmentForm ul {
   list-style-type: none;
   padding: 0;
