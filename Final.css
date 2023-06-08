@@ -10,91 +10,90 @@ body {
 }
 
 header {
-    background-color: #EFDECD; 
-    padding: 40px;
-    text-align: center;
+  background-color: #EFDECD;
+  padding: 40px;
+  text-align: center;
 }
 
 .info {
-    display: none;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navButton {
-    background-color: #B099B1;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 0 10px;
-  }
-  
-  .navButton:hover {
-    background-color: #e6cde0;
-  }
+  display: none;
+}
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navButton {
+  background-color: #B099B1;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.navButton:hover {
+  background-color: #e6cde0;
+}
 
 #appointmentForm {
-    display: none;
-  }
-  
-  #appointmentForm ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #appointmentForm li {
-    margin-bottom: 10px;
-  }
-  
-  #appointmentForm label {
-    display: block;
-  }
+  display: none;
+}
+
+#appointmentForm ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#appointmentForm li {
+  margin-bottom: 10px;
+}
+
+#appointmentForm label {
+  display: block;
+}
 
 #contactInfo {
-    display: none;
+  display: none;
 }
 
 nav {
-    background-color: #B099B1; 
-    padding: 10px;
+  background-color: #B099B1;
+  padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    color: #FFFFFF; 
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .image-container img {
-    max-width: 1084px;
-    width: 100%;
-    height: auto;
+  max-width: 1084px;
+  width: 100%;
+  height: auto;
 }
